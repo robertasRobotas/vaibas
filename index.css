@@ -25,13 +25,22 @@ a{
 #cover{
 	
 height: 100%;
-background: #222 url('photo.gif') center ;
+
 background-size: cover;
 display: flex;
 align-items: center;
-
+animation: myanimation 15s infinite;
 
 }
+@keyframes myanimation {
+  0% {background: #222 url('header1.gif') center ;}
+  30% {background: #222 url('header1.gif') center ;}
+  50%{background: #222 url('header2.gif') center ;}
+  80%{background: #222 url('header2.gif') center ;}
+  100%{background: #222 url('header1.gif') center ;}
+
+}
+
 #cover-caption{
 width: 100%;
 text-align: center;
@@ -62,8 +71,11 @@ line-height: 2;
 
 .port{
 	text-align: center;
-	font-family: couier;
 	background-color: #e0e0e0;
+}
+
+.port h1{
+font-family: couier;
 }
 
 #Capa_1{
@@ -78,6 +90,7 @@ line-height: 2;
 	padding: 3%;
 	letter-spacing: 2px;
 	font-size: 14px;
+	font-family: Courier;
  
 }
 
